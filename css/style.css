@@ -1,0 +1,477 @@
+body{
+	background: #fff;
+    font-family: 'DM Mono', monospace;
+}
+/*Burger panel*/
+.burger{
+	position: fixed;
+	left: 45px;
+	top: calc(50% - 30px);
+	z-index: 5;
+}
+.menu{
+	margin: 0;
+	width: 50px;
+	height: 50px;
+	z-index: 0;
+	position: relative;
+	text-align: center;
+}
+#check-menu{
+	display: none;
+}
+label{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -20px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	z-index: 7;
+}
+.line{
+	z-index: 6;
+	position: absolute;
+	top: 8px;
+	left: -18px;
+	width: 35px;
+	height: 3px;
+	border-radius: 50px 50px;
+	background-color: #75715e;
+	transition: .5s;
+}
+.two, .three{
+	top: 18px;
+	left: -10px;
+}
+.four{
+ 	top: 28px;
+}
+.main-menu{
+	z-index: 4;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	width: 300px;
+	height: 1600px;
+	background-color: #fff;
+	top: 0;
+	left: -600px;
+	overflow: hidden;
+	opacity: 0.8;
+	transition: .5s;
+	margin: 60px 0 60px 0;
+	padding: 80px 20px 80px 80px; 
+}
+.main-menu:hover{
+	opacity: 1;
+	box-shadow:
+        1px 1px #f92672,
+        2px 2px #f92672,
+        3px 3px #f92672,
+        4px 4px #f92672,
+        5px 5px #f92672;
+    -webkit-transform: translate(-5px);
+    transform: translate(-5px);
+}
+.burger-nav{
+	display: flex;
+	justify-content: flex-start;
+    margin: 100px 0 60px 20px;
+    text-decoration: none;
+    font-family: 'DM Mono';
+  	font-size: 32px;
+  	font-weight: 900;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: normal;
+  	letter-spacing: normal;
+  	color: #000;
+  	text-align: left;	
+}
+.burger-box{
+	text-align: left;
+	margin: 40px 0 0 20px;
+}
+.collab{
+	font-size: 18px;
+  	font-weight: normal;
+  	font-stretch: normal;
+  	font-style: italic;
+  	line-height: normal;
+  	letter-spacing: normal;
+  	color: #f92672;
+}
+.email-burger{
+	font-size: 32px;
+  	font-weight: 900;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: normal;
+  	letter-spacing: normal;
+  	color: #272822;
+}
+.burger-nav a{
+	text-decoration: none;
+	color: #000;
+}
+.burger-links{
+}
+.burger-links li{
+	margin-bottom: 20px;
+}
+.info-numbers{
+	text-align: left;
+	margin-bottom: 40px;
+}
+#check-menu:checked ~ .wrapper{
+	top: 500px;
+	right: 100px;
+}
+#check-menu:checked ~ .main-menu{
+	top: -950px;
+	left: 30px;
+}
+#check-menu:checked ~ .line-bg .first{
+	display: none;
+}
+#check-menu:checked ~ .line-bg .two{
+	transform: rotate(45deg);
+	z-index: 2;
+}
+#check-menu:checked ~ .line-bg .three{
+	transform: rotate(-45deg);
+	z-index: 2;
+}
+#check-menu:checked ~ .line-bg .four{
+	display: none;
+}
+#check-menu:checked ~ label{
+	top: -500px;
+	width: 100vw;
+	height: 1000px;
+	z-index: 3;
+}
+/*Main content*/
+.wrapper{
+	font-family: 'DM Mono';
+	padding: 0 80px;
+}
+.header{
+	padding: 0 0 80px;
+	background: #fff;
+}
+.header-container{
+	height: 80px;
+    display: flex;
+	align-items: center;
+}
+.header-container .tag-name{
+	z-index: 50;
+	font-style: italic;
+}
+.hero{
+	background: #60B9CE;
+	height: calc(100vh - 160px);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	z-index: 2;
+}
+.hero:after{
+	content: "";
+	width: calc(50vw - 80px);
+	height: calc(100vh - 160px);
+	background: #f5f5f5;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: width 1s;
+}
+.hero:hover:after{
+	width: 0;
+}
+.welcome-text{
+	position: relative;
+	right: 0;
+	z-index: 10;
+	font-size: 120px;
+	line-height: 1.2;
+	color: #000;
+	transform: rotate(0deg);
+	transition:  transform 1s, right 1s;
+}
+.hero-text{
+	width: 600px;
+	height: 150px;
+	position: absolute;
+	top: 100%;
+	left: 10%;
+	transition: top 1s;
+}
+.hero:hover .welcome-text{
+	right: -50%;
+	transform: rotate(90deg);
+}
+.hero:hover .hero-text{
+	top: 45%;
+}
+.menu{
+	position: absolute;
+	left: 4px;
+	top: 50%;
+	z-index: 23;
+}
+.links{
+	position: fixed;
+	right: 0;
+	top: calc(50% - 56px);
+	padding: 0 26px;
+}
+.links li{
+	margin-bottom: 16px;
+}
+.parallax {
+	/* The image used */
+  	background-image: url("../img/main-photo.png");
+
+  	/* Full height */
+  	height: 500px;
+
+  	/* Create the parallax scrolling effect */
+  	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+.data{
+	font-family: 'DM Mono';
+	font-size: 18px;
+    font-style: italic;
+	color: #f92672;
+}
+.title{
+	font-family: 'DM Mono';
+	font-size: 25px;
+  	font-weight: 900;
+  	color: #000;
+  	padding: 5px 0 25px;
+}
+.hero-text p{
+	font-family: 'DM Mono';
+	font-weight: normal;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: normal;
+  	letter-spacing: normal;
+	font-size: 20px;
+	color: #272822;
+}
+.section{
+	flex-basis: content;
+	background-color: #f5f5f5;
+	margin: 80px 0;
+	padding: 80px;
+	flex-direction: column;
+}
+.section-title{
+	font-family: 'DM Mono';
+  	font-size: 80px;
+  	font-weight: 900;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: normal;
+  	letter-spacing: normal;
+  	color: #272822;
+  	padding: 0 0 32px;	
+}
+.skills-text{
+	font-family: 'DM Mono';
+  	font-size: 32px;
+  	font-weight: normal;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: normal;
+  	letter-spacing: normal;
+  	color: #000000;
+  	padding-bottom: 32px;
+}
+.skills-number{
+	position: absolute;
+	top:0;
+	right: 0;
+	font-family: 'DM Mono';
+  	font-size: 32px;
+  	font-weight: normal;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: normal;
+  	letter-spacing: normal;
+  	color: #000000;
+  	padding-bottom: 32px;
+  	opacity: 0;
+  	transition: opacity 4s;
+}
+.section:hover div .skills-number{
+	opacity: 1;
+}
+.box div{
+	width: 1.1%;
+	height: 14px;
+	margin: 12px 0;
+	border-radius: 7px;
+  	background-color: #f92672;
+  	position: absolute;
+  	top: 0;
+  	left: 35%;
+  	transition: width 4s;
+}
+.box{
+	display: flex;
+	flex-wrap: nowrap;
+	position: relative;
+}
+.section:hover div .skills-line1{
+	width: 53.1%;
+}
+.section:hover div .skills-line2{
+	width: 39.1%;
+}
+.section:hover div .skills-line3{
+	width: 33.1%;
+}
+.section:hover div .skills-line4{
+	width: 23.4%;
+}
+.section:hover div .skills-line5{
+	width: 39.5%;
+}
+.section:hover div .skills-line6{
+	width: 35.2%;
+}
+.section:hover div .skills-line7{
+	width: 43%;
+}
+.box .skills-line8{
+    width: 56%;
+    opacity: 0;
+    transition: opacity 4s;
+}
+.section:hover div .skills-line8{
+	opacity: 0.1;
+}
+.section-components{
+	background: #353535 url(../img/components.png) no-repeat;
+	background-size: contain;
+	background-position: center;
+	min-height: calc(100vh - 160px);
+	position: relative;
+	margin-bottom: 80px;
+}
+.components-box{
+	padding: 80px;
+	background-color: #353535;
+	opacity: 0;
+	transition: opacity 1s;
+}
+.components-box:hover{
+	opacity: 1;
+}
+.box-title{
+	margin-bottom: 80px;
+	font-family: 'DM Mono';
+  	font-size: 80px;
+  	font-weight: 900;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: normal;
+  	letter-spacing: normal;
+  	color: #e6db74;
+}
+.box-text{
+	color: #fff;
+	margin-bottom: 80px; 
+}
+.text-projects{
+	font-size: 32px;
+	font-weight: 900;
+  	color: #ffffff;
+  	padding-bottom: 40px;
+}
+.box-text p{
+	font-size: 32px;
+	color: #f5f5f5;
+	margin-bottom: 25px;
+}
+.links-git{
+	color: #f92672;
+	font-style: italic;
+	font-size: 18px;
+}
+.section-dynamic{
+	background-color: #f5f5f5;
+	margin-bottom: 80px;
+	display: flex;
+	flex-direction: column;
+}
+.dynamic-box{
+	padding: 80px;
+}
+.dynamic-text{
+	font-family: 'DM Mono';
+  	font-size: 80px;
+  	font-weight: 900;
+  	font-stretch: normal;
+  	font-style: normal;
+  	line-height: normal;
+  	letter-spacing: normal;
+  	color: #272822;
+  	margin-bottom: 80px;
+}
+.box-dynamic .data{
+	font-size: 18px;
+  	font-style: italic;
+  	color: #f92672;
+  	margin-bottom: 10px;
+}
+.box-dynamic h2{
+	font-family: 'DM Mono';
+  	font-size: 32px;
+  	font-weight: 900;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.box-dynamic p{
+	font-size: 32px;
+	color: #272822;
+	margin-bottom: 46px; 
+}
+.link{
+	font-size: 18px;
+	font-style: italic;
+	color: #f92672;
+}
+.footer{
+	margin-bottom: 80px;
+	display: flex;
+	justify-content: space-between;
+}
+.info-number{
+	align-self: center;
+}
+.footer a{
+	font-size: 18px;
+    font-style: italic;
+    color: #f92672;
+    margin-bottom: 8px;
+}
+.footer .email{
+	font-size: 32px;
+	font-weight: 900;
+	font-style: normal;
+	color: #000;
+}
