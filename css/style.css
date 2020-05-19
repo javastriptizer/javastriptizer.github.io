@@ -1,6 +1,6 @@
 body{
 	background: #fff;
-    font-family: 'DM Mono', monospace;
+    font-family: 'Montserrat', sans-serif;
 }
 /*Burger panel*/
 .burger{
@@ -81,7 +81,7 @@ label{
 	justify-content: flex-start;
     margin: 100px 0 60px 20px;
     text-decoration: none;
-    font-family: 'DM Mono';
+    font-family: 'Montserrat';
   	font-size: 32px;
   	font-weight: 900;
   	font-stretch: normal;
@@ -156,7 +156,7 @@ label{
 }
 /*Main content*/
 .wrapper{
-	font-family: 'DM Mono';
+	font-family: 'Montserrat';
 	padding: 0 80px;
 }
 .header{
@@ -173,7 +173,8 @@ label{
 	font-style: italic;
 }
 .hero{
-	background: #60B9CE;
+background: rgb(69,162,158);
+background: linear-gradient(35deg, rgba(69,162,158,1) 17%, rgba(102,252,241,1) 55%, rgba(245,245,245,1) 80%);
 	height: calc(100vh - 160px);
 	position: relative;
 	display: flex;
@@ -199,7 +200,7 @@ label{
 	position: relative;
 	right: 0;
 	z-index: 10;
-	font-size: 120px;
+	font-size: 95px;
 	line-height: 1.2;
 	color: #000;
 	transform: rotate(0deg);
@@ -249,20 +250,20 @@ label{
   	background-size: cover;
 }
 .data{
-	font-family: 'DM Mono';
+	font-family: 'Montserrat';
 	font-size: 18px;
     font-style: italic;
 	color: #f92672;
 }
 .title{
-	font-family: 'DM Mono';
+	font-family: 'Montserrat';
 	font-size: 25px;
   	font-weight: 900;
   	color: #000;
   	padding: 5px 0 25px;
 }
 .hero-text p{
-	font-family: 'DM Mono';
+	font-family: 'Montserrat';
 	font-weight: normal;
   	font-stretch: normal;
   	font-style: normal;
@@ -279,7 +280,7 @@ label{
 	flex-direction: column;
 }
 .section-title{
-	font-family: 'DM Mono';
+	font-family: 'Montserrat';
   	font-size: 80px;
   	font-weight: 900;
   	font-stretch: normal;
@@ -290,7 +291,7 @@ label{
   	padding: 0 0 32px;	
 }
 .skills-text{
-	font-family: 'DM Mono';
+	font-family: 'Montserrat';
   	font-size: 32px;
   	font-weight: normal;
   	font-stretch: normal;
@@ -304,7 +305,7 @@ label{
 	position: absolute;
 	top:0;
 	right: 0;
-	font-family: 'DM Mono';
+	font-family: 'Montserrat';
   	font-size: 32px;
   	font-weight: normal;
   	font-stretch: normal;
@@ -383,7 +384,7 @@ label{
 }
 .box-title{
 	margin-bottom: 80px;
-	font-family: 'DM Mono';
+	font-family: 'Montserrat';
   	font-size: 80px;
   	font-weight: 900;
   	font-stretch: normal;
@@ -422,7 +423,7 @@ label{
 	padding: 80px;
 }
 .dynamic-text{
-	font-family: 'DM Mono';
+	font-family: 'Montserrat';
   	font-size: 80px;
   	font-weight: 900;
   	font-stretch: normal;
@@ -439,7 +440,7 @@ label{
   	margin-bottom: 10px;
 }
 .box-dynamic h2{
-	font-family: 'DM Mono';
+	font-family: 'Montserrat';
   	font-size: 32px;
   	font-weight: 900;
     color: #000000;
