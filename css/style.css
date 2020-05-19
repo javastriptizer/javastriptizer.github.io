@@ -173,8 +173,7 @@ label{
 	font-style: italic;
 }
 .hero{
-background: rgb(69,162,158);
-background: linear-gradient(35deg, rgba(69,162,158,1) 17%, rgba(102,252,241,1) 55%, rgba(245,245,245,1) 80%);
+background: #28adba;
 	height: calc(100vh - 160px);
 	position: relative;
 	display: flex;
@@ -238,7 +237,7 @@ background: linear-gradient(35deg, rgba(69,162,158,1) 17%, rgba(102,252,241,1) 5
 }
 .parallax {
 	/* The image used */
-  	background-image: url("../img/main-photo.png");
+  	background-image: url("../img/Main.png");
 
   	/* Full height */
   	height: 500px;
